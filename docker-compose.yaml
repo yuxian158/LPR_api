@@ -1,0 +1,12 @@
+version: "0.1"
+services:
+  fastapi:
+    image: fastapi_app
+    container_name: fastapi
+    restart: always
+    hostname: fastapi
+    tty: true
+    ports:
+      - "7443:80"
+    volumes:
+      - ./app:/app
